@@ -1,5 +1,6 @@
 <h1>test</h1>
-
+<br>
+<br>
 
 <script>
   // Load the IFrame Player API code asynchronously.
@@ -13,20 +14,8 @@
   var player;
   function onYouTubePlayerAPIReady() {
     player = new YT.Player('ytplayer', {
-      height: '360',
-      width: '640',
-      videoId: 'M7lc1UVf-VE'
+      height: '600',
+      width: '800',
+      videoId: 'xwtdhWltSIg'
     });
-
-        // autoplay video
-        function onPlayerReady(event) {
-            event.target.playVideo();
-        }
-
-        // when video ends
-        function onPlayerStateChange(event) {        
-            if(event.data === 0) {          
-                alert('done');
-            }
-        }
 </script>
